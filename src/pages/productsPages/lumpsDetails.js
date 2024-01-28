@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { lumpsData } from "./quartzLumpsData";
 import prodImg from '../../components/assets/prod.png';
@@ -18,14 +18,30 @@ const LumpsDetails = () => {
       fade:true
 
   };
-  const { subproductId } = useParams();
-  const subproduct = lumpsData.subproducts[subproductId];
+  // const { subproductId } = useParams();
+  // const subproduct = lumpsData.subproducts[subproductId];
 
-  if (!subproduct) {
-    return <div>Subproduct not found</div>;
+  let url = window.location.href;
+   let lastIndex = url.length;
+   let subProductId = url[lastIndex-1]; 
+   console.log(subProductId);
+
+  const [subProduct, SetSubProduct] = useState({});
+  useEffect(() => {
+    SetSubProduct(lumpsData.subproducts[subProductId]);
+    if (!subProduct) {
+      return <div>Product not found</div>;
+    }
+    //console.log("Hello");
+  }, []);
+
+  console.log(subProduct);
+
+  if (!subProduct) {
+     return <div>Subproduct not found</div>;
   }
 
-  const { name, applications, physicalProperties, chemicalProperties,image_url2,image_url3 } = subproduct;
+  const { name, applications, physicalProperties, chemicalProperties,image_url2,image_url3 } = subProduct;
 
   return (
     <div>

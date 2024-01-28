@@ -1,16 +1,10 @@
 import React from "react";
-
-
-
 import { Fade } from "react-awesome-reveal";
 import Nav from 'react-bootstrap/Nav';
 import img from './productAssets/slider/slabs/sliderImg1.png';
 import img2 from './productAssets/slider/slabs/sliderImg2.png';
 import img3 from './productAssets/slider/slabs/sliderImg3.png';
-
 import { abc } from "./slabsData";
-
-
 
 
 const Slabs = () => {
@@ -84,14 +78,12 @@ const Slabs = () => {
           {data.map((product, index) => (
            <div key={index} className='col-lg-4' id='imgContainer'>
             
-           <a href={`/calacatta/product/${index}`}>
+           {/* <a href={`/calacatta/product/${index}`}>
            { console.log(product.image_url)}
-
-           <img className='prodImg' src={product.image_url} loading="lazy" />
-
-           </a> 
+           </a>  */}
            {/* microquartz\src\pages\productsPages\productAssets\NaturalSeries */}
            <Nav.Link  href={`/calacatta/product/${index}`}>
+           <img className='prodImg' src={product.image_url} loading="lazy" />
              <p id='productName'>{product.product_name}</p>
            </Nav.Link>
          </div>

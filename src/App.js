@@ -80,8 +80,7 @@ const App = () => {
             <Contact />
           </Route>
           <Route path="/slabs" >
-            <Slabs></Slabs>
-          
+            <Slabs/>          
           </Route>
           <Route path="/microSilica" component={microSilica} />
           <Route path="/quartzGritz" component={quartzGritz} />
