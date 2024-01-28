@@ -1,13 +1,698 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
+@media (max-width:600px) {
+    #carouselExampleCaptions {
+      margin-top: 55px;
+  
+    }
+  }
+  a {
+    text-decoration: none;
+    outline: none; /* Optional: removes the blue focus border */
+    color: #253a86;
+  }
+  #homeSubtext {
+    font-size: 17px;
+    color: #8c94a3;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-family: Raleway;
+    color: #191919;
+    font-weight: 500;
+    font-size: 16px;
+  
+  
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Cinzel;
+    /* font-family: Bonnes; */
+    font-weight: 1000;
+  }
+  
+  .navBrand {
+    font-family: Cormorant;
+  
+  
+  }
+  
+  .navLink {
+    font-family: Cinzel;
+  
+  }
+  
+  #headingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  
+  }
+  
+  #headingContainer #heading {
+    text-align: center;
+    color: #2f0071;
+  
+  }
+  
+  #row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #productCard {
+    margin: 40px;
+    height: 250px;
+    width: 350px;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+  
+  }
+  
+  #productCard #productImageContainer {
+    height: 90%;
+    background-color: black;
+  }
+  
+  #productCard:hover {
+    background-color: rgb(252, 252, 252);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+  }
+   #productName {
+    color: rgb(0, 0, 0);
+    bottom: 0px;
+    cursor: pointer;
+   
+    margin-top: 10px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  #productName:hover {
+    color: rgb(1, 146, 194);
+    bottom: 0px;
+    text-shadow: 3px solid rgb(8, 0, 0);
+    cursor: pointer;  
+  }
+  #imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
+  }
+  .prodImg{
+    height:350px;
+    width: 350px;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+   
+    
+  
+  }
+  .prodImg:hover{
+    transform: scale(1.05); 
+    border-radius: 50px;
+    box-shadow: rgba(37, 215, 242, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+  .bg-custom-color {
+    background-color: #ffcc00;
+    /* Replace with your desired color */
+  }
+  
+  #aboutBoxLeft1 {
+    height: 350px;
+    width: 50vw;
+    background-image: url('./components/assets/about1.png');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  }
+  
+  #aboutBoxLeft3 {
+    height: 350px;
+    width: 50vw;
+    background-image: url('./components/assets/about3.png');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  }
+  #aboutBoxRight4{
+    height: 350px;
+    width: 50vw;
+    background-image: url('./components/assets/about3.png');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  }
+  #aboutBoxLeft5 {
+    height: 350px;
+    width: 50vw;
+    background-image: url('./components/assets/about3.png');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  }
+  
+  #RightContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #aboutBoxRight2 {
+  
+    height: 350px;
+    width: 50vw;
+    background-image: url('./components/assets/about2.png');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    right: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+  }
+  
+  #abtTextContent {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  
+  @media (max-width:600px) {
+  .prodImg{
+    width: 80vw;
+    height: 80vw;
+  }
+  
+    #aboutBoxLeft1 {
+      height: 200px;
+      width: 100vw;
+  
+    }
+  
+    #aboutBoxLeft3 {
+      height: 200px;
+      width: 100vw;
+  
+    }
+  
+    #aboutBoxRight2 {
+  
+      height: 200px;
+      width: 100vw;
+  
+    }
+   #aboutBoxRight4{
+    height: 200px;
+    width: 100vw;
+  
+  
+   }
+   #aboutBoxLeft5{
+    height: 200px;
+    width: 100vw;
+  
+   }
+    #strengthSection {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #abtTextContent {
+      padding-top: 25px;
+      padding-bottom: 15px;
+    }
+  
+  
+  
+  }
+  
+  body {
+    scroll-behavior: smooth;
+  }
+  
+  /* card glass */
+  
+  
+  
+  /*  */
+  
+  #strengthSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: rgba(32, 32, 32, 0.383);
+    /* background: linear-gradient(90deg, rgba(32,32,32,1) 0%, rgba(127,127,129,1) 41%, rgba(255,255,255,1) 100%); */
+    background-image: url(./components/assets/strengthBg.png);
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  }
+  
+  .pageCard {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    flex-direction: column;
+  
+    margin: 20px;
+    height: 380px;
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background-image: url('./components/assets/pagecurl-removebg-preview.png');
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+  }
+  
+  .pageCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.447) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  
+  }
+  
+  .pageCardTitle {
+    color: #ffffff;
+    margin-top: 35px;
+  }
+  
+  .pageCardContent {
+    padding: 20px;
+  
+    font-size: 15px;
+    color: rgb(15, 15, 15);
+    margin-left: 10px;
+  }
+  
+  /* Infrastructure */
+  
+  .infraTopContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .infraTopImage {
+    margin-top: 50px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    background-image: url('./components/assets/infra/infra.png');
+    padding: 70px;
+  
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  }
+  
+  .infraMiddle {
+    height: 300px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.27);
+  
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    padding: 30px;
+  }
+  
+  .infraHeadingContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .infraBorder{
+    width: 5px;
+    height: 35px;
+    background-color: #2f0071;
+    margin-right: 15px;
+  }
+  
+  .infraContent {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+  
+  }
+  
+  .infraImageLeft1 {
+    height: 300px;
+    width: calc(50vw-100px);
+  
+    background-color: #0093E9;
+    background-image: url('./components/assets/rawM.webp');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+  
+  
+  }
+  
+  .infraImageLeft3 {
+    height: 300px;
+    width: calc(50vw-100px);
+  
+    background-color: #0093E9;
+    background-image: url('./components/assets/IndustrialDrill.webp');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+  
+  }
+  
+  .infraImageRight2 {
+  
+    background-color: #0093E9;
+    background-image: url('./components/assets/QC.webp');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+    height: 300px;
+    width: calc(50vw-100px);
+  
+  }
+  
+  .infraImageRight4 {
+  
+    background-color: #0093E9;
+    background-image: url('./components/assets/powder.webp');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+    height: 300px;
+    width: calc(50vw-100px);
+  
+  }
+  .infraImageLeft5{
+    
+    background-color: #0093E9;
+    background-image: url('./components/assets/QC.webp');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+    height: 300px;
+    width: calc(50vw-100px);
+  
+  }
+  .infraImageRight6{
+  
+    background-color: #0093E9;
+    background-image: url('./components/assets/powder.webp');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+    height: 300px;
+    width: calc(50vw-100px);
+  
+  }
+  
+  @media (max-width:600px) {
+    .infraContent {
+      padding-left: 0px;
+      padding-right: 0px;
+  
+  
+    }
+  
+    .infraTopImage {
+      height: 70vh;
+    }
+  
+    .infraMiddle {
+      height: 400px;
+      width: 350px;
+    }
+  }
+  
+  /* about */
+  .aboutTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    
+    background-image: url('./components/assets/quartz.jpg');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+    margin-bottom: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  
+  }
+  
+  .aboutMiddle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 50vw;
+    background: rgba(255, 255, 255, 0.27);
+  
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 30px;
+    object-fit: cover;
+  
+  
+  }
+  
+  @media (max-width:600px) {
+  
+    .aboutMiddle {
+      margin-top: 50px;
+      width: 80vw;
+      height: 35vh;
+    }
+  
+  }
+  
+  /* contact */
+  
+  
+  .ContactTopContainer {
+    width: 100%;
+    height: 50vh;
+    
+    background-image: url('./components/assets/contact.jpg');
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+  }
+  
+  #contactSection {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  
+  #secondContainer {
+  
+    background-size: cover;
+    /* This is to emulate object-fit: fill */
+    background-position: center center;
+  
+    padding: 20px;
+  }
+  
+  #firstContainer {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  
+    padding: 20px;
+  
+  }
+  
+  @media (max-width:600px) {
+    #contactSection {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+  }
+  
+  /* footer */
+  
+  /* Footer.css */
+  
+  /* Footer.css */
+  .footer {
+    background-image: url('./components/assets/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+  
+  /* demo */
+  
+  .lleftImageContainer {}
+  
+  .topLine {
+    height: 50px;
+    background-color: rgb(0, 0, 60);
+  
+    width: 100%;
+    z-index: -1;
+    margin-top: 25px;
+  }
+  
+  .iimageContaiener {
+    height: 200px;
+    width: 80%;
+    background-color: grey;
+  
+  }
+  
+  .contactImage {
+    width: 300px;
+    margin-top: -50px;
+  }
+  
+  iframe {}
+  
+  
+  /* whatsapp */
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.287);
+  }
+  
+  .whatsapp-button img:hover {
+    box-shadow: 0px 0px 10px rgba(60, 252, 16, 0.684);
+  
+  }
+  
+  /* microSilica page */
+  .productSection{
+    margin-bottom: 60px;
+  }
+  
+  #productPageImageContainer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  
+  .slabPageImage{
+   width: 500px;
+   height: 500px;
+  }
+  #productPageDescriptionContainer{
+   
+  
+    text-align: left;
+    margin-top: 40px;
+  }
+  .productPageImage{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .BorderLine{
+    border: solid 1px #d9d9d9;
+    width: 95%;
+    margin-top: 30px;
+    
+  }
+  @media (max-width:600px) {
+    .slabPageImage{
+      width: 100vw;
+      height: 300px;
+     }
+   .productPageImage{
+    width: 100vw;
+   }
+   .BorderLine{
+    width: 100%;
+   
+  
+   }
+  
+    }
+  
+  
+  
+    /* slider */
+  
+    .imageSlider{
+      width: 39vw;
+    
+    
+    }
+    .slabImages{
+      height: 39vw;
+      width: 39vw;
+    }
+  
+    @media only screen and (max-width: 767.98px) {
+  
+      .imageSlider{
+        width: 100vw;
+        border: none;
+      }
+      .slabImages{
+        height: 50vh;
+        width: 100vw;
+      }
+    }
+  
+  
+    .footer {
+      background-image: url('./components/assets/contactImage.png');
+      background-size: cover;
+      color: white;  /* Set text color to make it visible on the image */
+      padding-bottom: 0px;
+    }
+  
