@@ -10,7 +10,7 @@ import { abc } from "./slabsData";
 const Slabs = () => {
   const { data } = abc;
 
- 
+  console.log("Hello");
 
   return (
     
